@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fake Language to English Translator</title>
+
+    <script type="text/javascript">
+      // Corresponds to the script in public/404.html, allowing redirects to be possible with GitHub Pages without issue.
+      (function (url) {
+        if (url.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(
+            null,
+            null,
+            url.pathname.slice(0, -1) + decoded + url.hash
+          );
+        }
+     }(window.location));
+    </script>
   </head>
   <body>
     <div id="root"></div>
