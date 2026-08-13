@@ -1,0 +1,22 @@
+<!-- Page for handling redirects and catching 404 Errors while using GitHub Pages -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Please Wait...</title>
+        <script type="text/javascript">
+            // Set up the script for handling redirects
+            var paths = 1; // Refers to the /repo-name/ section of the URL, flagging it to keep
+            var url = window.location;
+
+            url.replace( // Configure the expression to handle any and all redirects
+                url.protocol + '//' + url.hostname + (url.port ? ':' : '') + url.pathname.split('/').slice(0, 1 + paths).join('/') + '/?/'
+                +  url.pathname.slice(1).split('/').slice(paths).join('/').replace(/&/g, '~and~') + (url.search ? '&' + url.search.slice(1).replace(/&/g, '~and~') : '') +
+                url.hash
+            );
+        </script>
+    </head>
+    <body></body>
+</html>
