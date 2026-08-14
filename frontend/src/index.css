@@ -1,0 +1,21 @@
+html {
+    background-image: linear-gradient(to top, rgb(44, 46, 83) 5%, rgb(14, 14, 14) 20%);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
+    color: white;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+textarea {
+    resize: none;
+    color: white;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 16px;
+}
+
+button {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}

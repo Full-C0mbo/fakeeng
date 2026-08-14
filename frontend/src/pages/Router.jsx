@@ -17,6 +17,7 @@ function Router() {
             <Routes>
                 <Route element={<Layout/>}> {/* Target the layout function, substituting Outlet for the specified route depending on the page the user is viewing */}
                     <Route path="/" element={<Home/>}/>
+                    <Route path='*' element={<Home/>}/> {/* All invalid paths reroute to home for now */}
                 </Route>
             </Routes>
         </BrowserRouter>

@@ -1,3 +1,39 @@
 h1 {
     border: 2px solid blue;
 }
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    width: 100vw;
+    height: 35vw;
+
+    border-bottom: 2px solid white;
+}
+
+.wrapper .input-area, .wrapper .response-area {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+textarea {
+    width: 45vw;
+    height: 40vh;
+    align-self: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    align-self: center;
+}
+
