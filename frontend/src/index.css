@@ -1,10 +1,11 @@
 html {
     background-image: linear-gradient(to top, rgb(44, 46, 83) 5%, rgb(14, 14, 14) 20%);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-attachment: fixed;
 
     color: white;
     font-family: "Comic Sans MS", sans-serif;
+    margin: 0;
 }
 
 textarea {
@@ -12,10 +13,12 @@ textarea {
     color: white;
     font-family: "Comic Sans MS", sans-serif;
     font-size: 16px;
+    margin: 0;
 }
 
 button {
     font-family: "Comic Sans MS", sans-serif;
     font-size: 24px;
     font-weight: bold;
+    margin: 0;
 }

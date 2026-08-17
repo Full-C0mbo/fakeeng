@@ -1,26 +1,17 @@
-h1 {
-    border: 2px solid blue;
+/* ------------------------------------------------------------------ HTML OBJECT CSS STYLING ------------------------------------------------------------------ */
+
+header {
+    border: 2px none;
+    background-image: linear-gradient(to bottom, rgb(44, 46, 83) 5%, rgb(14, 14, 14) 50%);
 }
 
 body {
     margin: 0;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-    width: 100vw;
-    height: 35vw;
-
-    border-bottom: 2px solid white;
-}
-
-.wrapper .input-area, .wrapper .response-area {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+h1 {
+    margin: 0;
+    justify-self: center;
 }
 
 textarea {
@@ -29,11 +20,77 @@ textarea {
     align-self: center;
 
     background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(44, 46, 83, 0.7);
+}
+
+textarea:focus {
+    outline: none;
+    border-color: rgba(153, 158, 255, 0.5);;
 }
 
 button {
     width: 150px;
     height: 50px;
     align-self: center;
+
+    background-color: rgb(21, 24, 73);
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(69, 77, 233, 0.6);
+}
+
+button:active {
+    background-color: rgba(159, 163, 255, 0.6);
+}
+
+/* ------------------------------------------------------------------ CLASSNAME CSS STYLING ------------------------------------------------------------------ */
+.title {
+    width: 100vw;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+
+    font-weight: bold;
+    font-size: 22px;
+    gap: 50rem;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(44, 46, 83, 0.7);
+}
+
+.description {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 98%;
+    font-size: 18px;
+}
+
+.notes {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(44, 46, 83, 0.7);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100vw;
+    height: 24.5vw;
+
+    border-bottom: 2px solid white;
+}
+
+.wrapper .input-area, .wrapper .response-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 

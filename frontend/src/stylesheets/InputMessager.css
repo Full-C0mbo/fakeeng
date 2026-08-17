@@ -1,0 +1,62 @@
+/* ------------------------------------------------------------------ HTML OBJECT CSS STYLING ------------------------------------------------------------------ */
+img {
+    border-radius: 50px;
+}
+
+/* ------------------------------------------------------------------ MESSAGE CLASS NAMES CSS STYLING ------------------------------------------------------------------ */
+.message-box {
+    margin-top: 1.3%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    height: 125px;
+    width: 98%;   
+}
+
+.message-wrapper {
+    display: grid;
+    grid-template-columns: 110px auto;
+    width: 95%;
+    column-gap: 25px;
+}
+
+.message-avatar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 100px;
+    height: 100px;
+    justify-self: start;
+    align-self: center;
+}
+
+.message-reason {
+    font-size: 36px;
+    margin: 1px;
+    width: auto;
+}
+
+.message-text {
+    color: white;
+    font-size: 20px;
+    width: auto;
+}
+
+/* ------------------------------------------------------------------ ADDITIONAL CSS STYLING ------------------------------------------------------------------ */
+.valid {
+    border-color: green;
+    color: green;
+}
+
+.invalid {
+    border-color: red;
+    color: red;
+}
+
+.blank {
+    border-color: white;
+    color: white;
+}
